@@ -3,47 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/CSS/style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+</head> 
 <body>
+<main>
+  <article>
+    <!-- Rating state start -->
+    <div class="rating-form form-rate">
+      <div class="icon-round"><img src="images/icon-star.svg" alt="yellow star icon"></div>
+      <h1 class="rating-form__title">How did we do?</h1>
+      <p class="rating-form__text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div id="btn-group" class="btn-group">
+        <button class="btn btn-rating btn--light btn--circle">1</button>
+        <button class="btn btn-rating btn--light btn--circle">2</button>
+        <button class="btn btn-rating btn--light btn--circle">3</button>
+        <button class="btn btn-rating btn--light btn--circle">4</button>
+        <button class="btn btn-rating btn--light btn--circle">5</button>
+      </div>
+      <button id="submit" class="btn btn--submit">Submit</button>
+    </div>
+    <!-- Rating state end -->
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+    <!-- Thank you state start -->
+    <div class="rating-form form-submitted">
+      <img class="rating-form__img grid-center" src="images/illustration-thank-you.svg" alt="An Image of a phone with a rating card flying behind it on a dotted path ending with the phone. The screen shows a long list overflowing the screen.">
+      <p id="rating" class="rating-form__rating grid-center">You selected <!-- insert rating here --> out of 5</p>
+      <h2 class="rating-form__title">Thank you!</h2>
+      <p class="rating-form__text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </article>
+</main>
+  
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script src="scripts.js"></script>
 </body>
 </html>

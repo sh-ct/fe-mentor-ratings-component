@@ -1,0 +1,143 @@
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Allow percentage-based heights in the application */
+html, body {
+  height: 100%;
+}
+
+/* Typographic tweaks! Add accessible line-height & Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* PROJECT STYLES */
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  color: hsl(217, 12%, 63%);
+  padding: 1.5rem;
+}
+
+/* button styles */
+.btn {
+  border: none;
+  font: inherit;
+  color: inherit;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+.btn-group {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.75rem 0 0.5rem 0;
+}
+.btn--light {
+  background-color: hsla(216, 12%, 54%, 0.1);
+}
+.btn--light:hover, .btn--light :focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.btn--submit {
+  background-color: hsl(25, 97%, 53%);
+  padding: 0.75rem 1.5rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.btn--submit:hover, .btn--submit :focus {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.btn--circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.btn--selected {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* icon styles */
+.icon-round {
+  background-color: hsla(216, 12%, 54%, 0.1);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+/* form styles */
+.rating-form {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  display: grid;
+  gap: 1rem;
+  max-width: 350px;
+}
+.rating-form__title {
+  color: hsl(0, 0%, 100%);
+}
+.rating-form__text {
+  font-size: 0.85rem;
+}
+.rating-form__rating {
+  background-color: hsla(216, 12%, 54%, 0.1);
+  color: hsl(25, 97%, 53%);
+  border-radius: 2rem;
+  max-width: max-content;
+  padding: 0.25rem 0.75rem;
+}
+
+.submitted .form-rate {
+  display: none;
+}
+.submitted .form-submitted {
+  display: grid;
+}
+
+.grid-center {
+  margin: auto;
+}
+
+.form-submitted {
+  display: none;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
